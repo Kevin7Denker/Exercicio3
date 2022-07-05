@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="463.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabbim.telas.Lista">
+
+
+   <children>
+      
+      <ListView fx:id="listarAluno" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <ListView fx:id="listarProfessor" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <ListView fx:id="listarCursos" GridPane.rowIndex="2" />
+     
+      <Label fx:id="alunos" prefHeight="18.0" prefWidth="119.0" text="       Lista Alunos" GridPane.columnIndex="4" />
+      <Label fx:id="professor" prefHeight="18.0" prefWidth="125.0" text="      Lista Professor" GridPane.columnIndex="2" />
+      <Label fx:id="cursos" prefHeight="18.0" prefWidth="123.0" text="       Lista Curso" />
+   </children>
+   
+   <columnConstraints>
+      <ColumnConstraints maxWidth="145.99999237060547" minWidth="10.0" prefWidth="137.33330535888672" />
+      <ColumnConstraints maxWidth="90.66668701171875" minWidth="10.0" prefWidth="30.66669464111328" />
+      <ColumnConstraints maxWidth="154.0" minWidth="10.0" prefWidth="146.99997965494794" />
+      <ColumnConstraints maxWidth="95.3333740234375" minWidth="7.3333740234375" prefWidth="41.66668701171875" />
+      <ColumnConstraints maxWidth="192.6666259765625" minWidth="10.0" prefWidth="142.00004069010413" />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="144.3333740234375" minWidth="10.0" prefWidth="144.3333740234375" />
+      <ColumnConstraints maxWidth="79.0" minWidth="10.0" prefWidth="25.6666259765625" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="22.666656494140625" minHeight="1.9073486328125E-6" prefHeight="1.9073486328125E-6" />
+      <RowConstraints maxHeight="429.99999809265137" minHeight="407.3333435058594" prefHeight="429.99999809265137" />
+   </rowConstraints>
+  
+   
+
+</GridPane>

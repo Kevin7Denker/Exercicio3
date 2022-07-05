@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="720" prefWidth="480"
+      fx:controller="ifpr.pgua.eic.trabbim.telas.CadastroAluno"
+      >
+
+      <padding>
+          <Insets topRightBottomLeft="8.0"/>
+      </padding>
+
+      <Label text="Nome:" labelFor="$tfNome" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+      <TextField fx:id="tfNome"  GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="300"/>
+    
+      <Label text="Cpf:" labelFor="$tfCpf" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+      <TextField fx:id="tfCpf"  GridPane.columnIndex="1" GridPane.rowIndex="2"/> 
+       
+      <Label text="Email:" labelFor="$tfEmail" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+      <TextField fx:id="tfEmail"  GridPane.columnIndex="1" GridPane.rowIndex="3"/>  
+      
+      <Label text="Telefone:" LabelFor="$tfTelefone" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+      <TextField fx:id="tfTelefone" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+ 
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <children>
+            <Button onAction="#limpar" prefHeight="32.0" prefWidth="92.0" styleClass="botao-limpar" text="Limpar" />
+            <Button onAction="#adicionar" prefHeight="33.0" prefWidth="98.0" text="Cadastrar" />
+         </children>
+      </HBox>
+   
+   <Label text="Data de Matricula: " LabelFor="$tfDataMatricula" GridPane.columnIndex="0" GridPane.rowIndex="5"/>  
+   <DatePicker fx:id="tfDataMatricula" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   
+
+</GridPane>
